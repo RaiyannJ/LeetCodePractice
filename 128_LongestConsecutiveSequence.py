@@ -7,8 +7,8 @@ class Solution(object):
         res = 0
         mySet = set(nums)
 
-        for e in nums:
-            if (e - 1) in nums: # check if it is the start of a sequence or not
+        for e in mySet:
+            if (e - 1) in mySet: # check if it is the start of a sequence or not
                 continue
             else:
                 length = 1 # if it is, begin counting the consecutive numbers
