@@ -7,6 +7,7 @@ class Solution(object):
         """
         map = {}
 
+        # search for target - nums[i] in set
         for i in range(len(nums)):
             res = target - nums[i]
             if res not in map:

@@ -28,9 +28,9 @@ class Solution(object):
         # No zeros, proceed with normal logic
         res = [0] * len(nums)
         res[0] = nums[0]
-        for i in range(1, len(nums)):
+        for i in range(1, len(nums)): # prefix sum
             res[i] = res[i-1] * nums[i]
 
-        prod = res[len(nums)-1]
-        res = [prod / e for e in nums]
+        prod = res[len(nums)-1] # final element is total prod
+        res = [prod / e for e in nums] # this logic removes itself from prod
         return res

@@ -12,6 +12,7 @@ class Solution(object):
         freqS = {}
         freqT = {}
 
+        # if freq of letters are same, is an anagram
         for i in range(len(s)):
             freqS[s[i]] = freqS.get(s[i], 0) +1
             freqT[t[i]] = freqT.get(t[i], 0) +1

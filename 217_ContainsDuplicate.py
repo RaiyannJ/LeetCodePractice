@@ -6,6 +6,7 @@ class Solution(object):
         """
         mySet = set()
 
+        # simple, hashsets don't contain duplicate
         for e in nums:
             if e in mySet:
                 return True
