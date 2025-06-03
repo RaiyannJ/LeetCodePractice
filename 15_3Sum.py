@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        nums = sorted(nums) # sort for 2 pointers
+        nums = sorted(nums) # sort for 2 pointers, O(nlgn)
         res = []
         seen = set() # track what triplets have been seen
         n = len(nums)
